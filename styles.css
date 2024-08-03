@@ -1,0 +1,93 @@
+*{
+    margin:0;
+    box-sizing: border-box;
+}
+body{
+        background-color: #424242;
+        font-family: sans-serif,'Times New Roman';
+      }
+/*--------styling of calculator container-----*/
+    .calculator{
+    background-color: #d1cbcb;
+    padding: 20px;
+    max-width: 350px;
+    margin:auto;
+    border: 1px solid #696565;
+    box-shadow: -3px 3px 7px rgba(0, 0, 0, 0.6),
+     inset -100px 0px 100px rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    margin-top: 60px;
+   
+}
+/*--------styling of the screen-----*/
+#result{
+    width: 100%;
+    margin: 15px auto;
+    height: 42px;
+    padding: 30px;
+    font-size: 20px;
+    border: none;
+    box-shadow: inset 1px 0px 5px #272525;  
+    border-radius: 5px;
+    text-align: right;
+    font-weight: bold;
+    background-color: #94a19d;
+    color: #000000;
+}
+.result:focus{
+    outline: none;
+}
+/*-------styling of the buttons------*/
+.buttons{
+   display:grid;
+   grid-template-columns: repeat(4,1fr);
+   grid-gap: 8px;
+   margin-top: 15px;
+}
+button{
+    padding: 20px;
+    font-size: 20px;    
+    border:none;
+    box-shadow: 0 2px 5px #6b6969;
+    cursor: pointer;
+    transition:.1s ease;
+    border-radius: 5px;
+    font-weight: bold;
+    font-family:Times New Roman;
+}
+button:hover{
+   background-color: #afadad;
+}
+button:active{
+    background-color: #0e0d0d;
+}
+.clear{
+    background-color: #e61d1d;
+    color: #fff;
+}
+.number, .decimal{
+    background-color: #fff;
+    color:#000;
+}
+.operator{
+    background-color: rgb(22, 94, 177);
+    color: #fff;
+}
+.equals{
+   background-color: rgb(27, 126, 2);
+   color: #fff;
+   grid-row: span 4;
+   font-size: 40px;
+   
+}
+
+p{
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);    font-family: roboto;
+    margin: 30px auto;
+    text-align: center;
+    font-size: 20px;
+    max-width: 350px;
+    border-radius: 10px;
+    font-weight: bold;
+}
